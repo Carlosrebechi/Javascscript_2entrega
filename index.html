@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+      
+
+</head>
+<body>
+  <div class="container">
+    <h1>Carrito de Compras</h1>
+    
+    <!-- Login Section -->
+    <div id="login-section">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" id="username" placeholder="Nombre de usuario">
+        <button onclick="login()">Ingresar</button>
+    </div>
+
+    <!-- Carrito Section -->
+    <div id="carrito-section" style="display: none;">
+        <h2>Productos Disponibles</h2>
+        <div id="productos"></div>
+        
+        <h2>Mi Carrito</h2>
+        <ul id="carrito"></ul>
+        
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+</div>
+
+<script src="carritocompras.js"></script>
+  
+</body>
+</html>
