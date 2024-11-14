@@ -9,16 +9,26 @@
 
 </head>
 <body>
-  <div class="container">
-    <h1>Carrito de Compras</h1>
-    
-    <!-- Login Section -->
     <div id="login-section">
         <h2>Iniciar Sesión</h2>
         <input type="text" id="username" placeholder="Nombre de usuario">
         <button onclick="login()">Ingresar</button>
-    </div>
+    </div>    
 
+  <div class="container">
+    <h1>Carrito de Compras</h1>
+    
+    <!-- Login Section -->
+    <div id="carrito-section" style="display: none;">
+        <h2>Bienvenido, <span id="nombre-usuario"></span></h2>
+        <h2>Productos Disponibles</h2>
+        <div id="productos"></div>
+    
+        <h2>Mi Carrito</h2>
+        <ul id="carrito"></ul>
+    
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
     <!-- Carrito Section -->
     <div id="carrito-section" style="display: none;">
         <h2>Productos Disponibles</h2>
@@ -30,7 +40,9 @@
         <button onclick="finalizarCompra()">Finalizar Compra</button>
     </div>
 </div>
-
+    <div>   
+         <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </div> 
 <script src="carritocompras.js"></script>
   
 </body>
